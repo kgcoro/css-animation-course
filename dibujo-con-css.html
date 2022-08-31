@@ -15,6 +15,7 @@
             display: grid;
             place-items: center;
         }
+
         .phone {
             position: relative;
             border: 8px solid black;
@@ -26,7 +27,7 @@
         }
 
         .layer-1 {
-      
+
             position: absolute;
             z-index: 1;
             height: 450px;
@@ -37,18 +38,18 @@
         }
 
         .layer-2 {
-      
+
             position: absolute;
             z-index: 2;
             height: 450px;
             width: 80px;
-            background: white;
+            /* background: white; */
             bottom: 0;
             left: 60px;
         }
 
         .layer-3 {
-      
+
             position: absolute;
             z-index: 3;
             left: 0;
@@ -61,7 +62,7 @@
         }
 
         .layer-4 {
-      
+
             position: absolute;
             z-index: 4;
             bottom: 0;
@@ -72,7 +73,7 @@
         }
 
         .layer-5 {
-      
+
             position: absolute;
             z-index: 5;
             background: salmon;
@@ -82,10 +83,10 @@
         }
 
         .layer-6 {
-      
+
             position: absolute;
             z-index: 6;
-            background: whitesmoke;
+            /* background: whitesmoke; */
             height: 250px;
             width: 80px;
             bottom: 0;
@@ -93,7 +94,7 @@
         }
 
         .layer-7 {
-      
+
             position: absolute;
             z-index: 7;
             background: seagreen;
@@ -104,7 +105,7 @@
         }
 
         .layer-8 {
-      
+
             position: absolute;
             z-index: 8;
             background: seashell;
@@ -117,7 +118,7 @@
         }
 
         .layer-9 {
-      
+
             position: absolute;
             z-index: 9;
             background: sandybrown;
@@ -127,7 +128,7 @@
         }
 
         .layer-10 {
-     
+
             position: absolute;
             z-index: 10;
             background: skyblue;
@@ -145,6 +146,7 @@
             position: absolute;
             left: 10px;
         }
+
         .left-ear--inner {
             background: plum;
             border-radius: 90%;
@@ -154,6 +156,7 @@
             left: 15px;
             top: 8px;
         }
+
         .right-ear--outer {
             background: white;
             border-radius: 90%;
@@ -162,6 +165,7 @@
             position: absolute;
             right: 10px;
         }
+
         .right-ear--inner {
             background: plum;
             border-radius: 90%;
@@ -171,6 +175,7 @@
             right: 15px;
             top: 8px;
         }
+
         .head {
             background: white;
             border-radius: 50%;
@@ -182,6 +187,7 @@
             margin: 0 auto;
             top: 30px;
         }
+
         .head__eye {
             background: black;
             border-radius: 50%;
@@ -190,12 +196,29 @@
             position: absolute;
             top: 15px;
         }
+
         .head__eye--left {
             left: 30px;
         }
+
         .head__eye--right {
             right: 30px;
         }
+
+        .lawn {
+            background: teal;
+            height: 20px;
+            width: 100%;
+        }
+
+        .land {
+            height: 30px;
+            width: 100%;
+            background: linear-gradient(135deg, teal 25%, transparent 25%) -50px 0, linear-gradient(-135deg, teal 25%, transparent 25%) -50px 0, linear-gradient(45deg, wheat 25%, transparent 25%),
+            linear-gradient(-45deg, transparent 25%, green 25%);
+            background-size: 33px 30px;
+        }
+
     </style>
 </head>
 
@@ -211,16 +234,55 @@
                 <div class="head__eye head__eye--left"></div>
                 <div class="head__eye head__eye--right"></div>
             </div>
-        </div> 
-        <div class="layer-2"></div> <!-- bunny 2 -->
-        <div class="layer-3"></div> <!-- wall 1 -->
-        <div class="layer-4"></div> <!-- bunny 3 -->
-        <div class="layer-5"></div> <!-- wall 2 -->
-        <div class="layer-6"></div> <!-- bunny 4 -->
-        <div class="layer-7"></div> <!-- wall 3 -->
-        <div class="layer-8"></div> <!-- lawn 1 -->
-        <div class="layer-9"></div> <!-- lawn 2 -->
-        <div class="layer-10"></div> <!-- lawn 3 -->
+        </div>
+        <!-- bunny 2 -->
+        <div class="layer-2">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye head__eye--left"></div>
+                <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <!-- wall 1 -->
+        <div class="layer-3">
+            <div class="lawn"></div>
+            <div class="land"></div>
+        </div>
+        <!-- bunny 3 -->
+        <div class="layer-4">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye head__eye--left"></div>
+                <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <!-- wall 2 -->
+        <div class="layer-5"></div>
+        <!-- bunny 4 -->
+        <div class="layer-6">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye head__eye--left"></div>
+                <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <!-- wall 3 -->
+        <div class="layer-7"></div>
+        <!-- lawn 1 -->
+        <div class="layer-8"></div>
+        <!-- lawn 2 -->
+        <div class="layer-9"></div>
+        <!-- lawn 3 -->
+        <div class="layer-10"></div>
     </div>
 </body>
 
